@@ -1,0 +1,27 @@
+﻿@page
+@model KhumaloCraft.Pages.MyWorkModel
+@{
+    Layout = "_Layout";
+}
+
+<h1>List Of Craftwork:</h1>
+<div class="craftwork-container">
+    @{
+        var craftworkImages = new string[] {
+    "https://www.wozamoya.co.za/wp-content/uploads/2020/08/A207-beaded-wirework-elephant-large-1-600x600.jpg",
+    "https://www.wozamoya.co.za/wp-content/uploads/2020/11/A015-Hippo-glass-bead-and-wire-sculpture-ornament-14cm-x-4cm-118-grams-Woza-Moya-KZN-Crafts-HACT-3-quarter-600x600.jpg",
+    "https://www.wozamoya.co.za/wp-content/uploads/2020/08/A0201-2-Wire-and-bead-Lexuss-Sable-antelope-Golds-white-and-black-wire-and-glass-beads-Woza-Moya-HACT-31x23-cm-408-grams-small-2-600x600.jpg",
+    "https://www.wozamoya.co.za/wp-content/uploads/2020/01/IMG_2971-1-600x600.jpg",
+    "https://www.wozamoya.co.za/wp-content/uploads/2021/11/A029-African-Hoopoe-small-600x600.jpg"
+    };
+    }
+
+    @foreach (var image in craftworkImages)
+    {
+        <div class="craftwork-item">
+            <img src="@image" alt="Craftwork Item" class="craftwork-image">
+            <p class="craftwork-description">Beautiful handmade african craftwork.</p>
+            <p class="craftwork-price">Price: R460.99</p>
+        </div>
+    }
+</div>

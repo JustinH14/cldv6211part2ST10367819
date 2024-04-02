@@ -1,0 +1,159 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.homepage-header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.black-bar {
+    border: none;
+    height: 20px;
+    background-color: #000; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.homepage-content {
+    padding: 20px;
+    text-align: center;
+}
+
+    .homepage-content h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .homepage-content p {
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+
+.about-us {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-us {
+    padding: 20px;
+    text-align: center;
+}
+
+    .about-us h2 {
+        color: #333;
+    }
+
+    .about-us p {
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+
+    .about-us img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.separator {
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: 20px 0;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-us {
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 5px; 
+    margin: 20px auto; 
+    max-width: 600px; 
+}
+.contact-us-heading {
+    text-align: center;
+}
+    .contact-us h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .contact-us p {
+        font-size: 2.0em;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .contact-us .contact-image {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+.craftwork-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.craftwork-item {
+    width: calc(20% - 20px); 
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+}
+
+.craftwork-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.craftwork-description {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.craftwork-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.rounded-image {
+    border-radius: 30px; 
+    width: 100%; 
+    height: auto; 
+}
