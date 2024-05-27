@@ -14,14 +14,19 @@
     "https://www.wozamoya.co.za/wp-content/uploads/2020/01/IMG_2971-1-600x600.jpg",
     "https://www.wozamoya.co.za/wp-content/uploads/2021/11/A029-African-Hoopoe-small-600x600.jpg"
     };
+
+        int i = 0; // Initialize index variable
     }
 
-    @foreach (var image in craftworkImages)
+    @foreach (var product in Model.Products)
     {
         <div class="craftwork-item">
-            <img src="@image" alt="Craftwork Item" class="craftwork-image">
-            <p class="craftwork-description">Beautiful handmade african craftwork.</p>
-            <p class="craftwork-price">Price: R460.99</p>
+            <img src="@craftworkImages[i]" alt="Craftwork Item" class="craftwork-image">
+            <p class="craftwork-description">@product.Name</p>
+            <p class="craftwork-price">Price: @product.Price.ToString("R")</p>
+            <p class="craftwork-category">Category: @product.Category</p>
+            <p class="craftwork-availability">Availability: @(product.Availability ? "In Stock" : "Out of Stock")</p>
         </div>
+        i++; // Increment index variable
     }
 </div>
